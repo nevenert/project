@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купить мед с доставкой по России</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Натуральный мёд от пасечника</h1>
+        <p>Прямо с пасеки. Чистый, ароматный, настоящий!</p>
+        <div class="cart-icon">
+            <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+        </div>
+    </header>
+
+    <section class="products">
+        <!-- 12 карточек -->
+        <div class="product"><img src="https://example.com/linden.jpg" alt="Липовый мёд">
+            <div class="product-content">
+                <h3>Липовый мёд</h3>
+                <p>Цена: 700 ₽/литр</p><button class="add-to-cart" data-name="Липовый мёд" data-price="700">Добавить в
+                    корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/buckwheat.jpg" alt="Гречишный мёд">
+            <div class="product-content">
+                <h3>Гречишный мёд</h3>
+                <p>Цена: 750 ₽/литр</p><button class="add-to-cart" data-name="Гречишный мёд" data-price="750">Добавить в
+                    корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/flower.jpg" alt="Цветочный мёд">
+            <div class="product-content">
+                <h3>Цветочный мёд</h3>
+                <p>Цена: 680 ₽/литр</p><button class="add-to-cart" data-name="Цветочный мёд" data-price="680">Добавить в
+                    корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/forest.jpg" alt="Лесной мёд">
+            <div class="product-content">
+                <h3>Лесной мёд</h3>
+                <p>Цена: 800 ₽/литр</p><button class="add-to-cart" data-name="Лесной мёд" data-price="800">Добавить в
+                    корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/mountain.jpg" alt="Горный мёд">
+            <div class="product-content">
+                <h3>Горный мёд</h3>
+                <p>Цена: 820 ₽/литр</p><button class="add-to-cart" data-name="Горный мёд" data-price="820">Добавить в
+                    корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/acacia.jpg" alt="Акациевый мёд">
+            <div class="product-content">
+                <h3>Акациевый мёд</h3>
+                <p>Цена: 900 ₽/литр</p><button class="add-to-cart" data-name="Акациевый мёд" data-price="900">Добавить в
+                    корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/chestnut.jpg" alt="Каштановый мёд">
+            <div class="product-content">
+                <h3>Каштановый мёд</h3>
+                <p>Цена: 850 ₽/литр</p><button class="add-to-cart" data-name="Каштановый мёд" data-price="850">Добавить
+                    в корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/steppe.jpg" alt="Степной мёд">
+            <div class="product-content">
+                <h3>Степной мёд</h3>
+                <p>Цена: 720 ₽/литр</p><button class="add-to-cart" data-name="Степной мёд" data-price="720">Добавить в
+                    корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/sunflower.jpg" alt="Подсолнечный мёд">
+            <div class="product-content">
+                <h3>Подсолнечный мёд</h3>
+                <p>Цена: 690 ₽/литр</p><button class="add-to-cart" data-name="Подсолнечный мёд"
+                    data-price="690">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/heather.jpg" alt="Вересковый мёд">
+            <div class="product-content">
+                <h3>Вересковый мёд</h3>
+                <p>Цена: 880 ₽/литр</p><button class="add-to-cart" data-name="Вересковый мёд" data-price="880">Добавить
+                    в корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/clover.jpg" alt="Клеверный мёд">
+            <div class="product-content">
+                <h3>Клеверный мёд</h3>
+                <p>Цена: 740 ₽/литр</p><button class="add-to-cart" data-name="Клеверный мёд" data-price="740">Добавить в
+                    корзину</button>
+            </div>
+        </div>
+        <div class="product"><img src="https://example.com/herbs.jpg" alt="Травяной мёд">
+            <div class="product-content">
+                <h3>Травяной мёд</h3>
+                <p>Цена: 770 ₽/литр</p><button class="add-to-cart" data-name="Травяной мёд" data-price="770">Добавить в
+                    корзину</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="description">
+        <h2>О мёде</h2>
+        <p>Мы предлагаем только натуральный мёд, собранный в экологически чистых районах Алтая. Мёд проходит проверку
+            качества и не содержит добавок.</p>
+        <p>Наша семейная пасека расположена в Краснодарском крае, среди цветущих лугов и лесов. Мы передаём
+            пчеловодческие традиции из поколения в поколение уже более 150 лет.</p>
+    </section>
+
+    <section class="contacts">
+        <h2>Контакты</h2>
+        <p>📞 +7 (***) ***-**-**</p>
+        <p>✉ *****@*****.ru</p>
+    </section>
+
+    <div class="cart" id="cart">
+        <h3>Корзина</h3>
+        <ul id="cartItems"></ul>
+        <p><strong>Итого:</strong> <span id="cartTotal">0 ₽</span></p>
+        <a href="404.html" id="checkoutBtn">Оформить заказ</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
